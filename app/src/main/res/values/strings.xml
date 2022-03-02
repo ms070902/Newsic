@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Newsic</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="newsApiKey">60fe8f53345b4a369b5dd1a56cc6a4b7</string>
+</resources>

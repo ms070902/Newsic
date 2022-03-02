@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailedNews">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                app:cardElevation="8dp"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_margin="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/newsHeadline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="26sp"/>
+                    <ImageView
+                        android:id="@+id/imgNews"
+                        android:scaleType="fitXY"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/ic_baseline_image_24"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"/>
+                    <TextView
+                        android:id="@+id/newsAuthor"
+                        android:layout_marginTop="6dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textStyle="italic"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/newsTime"
+                        android:layout_marginTop="6dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textStyle="italic"
+                        android:textColor="@color/black"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:layout_marginLeft="250dp"
+                            android:id="@+id/textToSpeech"
+                            android:text=" "
+                            android:drawableLeft="@drawable/ic_baseline_record_voice_over_24"
+
+                            android:layout_gravity="center"
+                            android:layout_width="60dp"
+                            android:shadowRadius="20"
+
+                            android:layout_height="wrap_content">
+
+                        </Button>
+                        <Button
+                            android:id="@+id/textToSpeechOff"
+                            android:text=" "
+                            android:drawableLeft="@drawable/ic_baseline_voice_over_off_24"
+
+                            android:layout_gravity="center"
+                            android:layout_width="60dp"
+                            android:shadowRadius="20"
+
+                            android:layout_height="wrap_content">
+
+                        </Button>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/newsDescription"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/newsContent"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
